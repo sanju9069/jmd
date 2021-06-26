@@ -1,0 +1,278 @@
+@import "main.scss";
+@media (max-width: 767px) {
+  // header css
+  header {
+    padding: 1rem 0rem;
+    .logo {
+      img {
+        max-width: 80px;
+      }
+    }
+    .enquire_div {
+      span {
+        padding-right: 1rem;
+      }
+      span,
+      button {
+        font-size: $font-10;
+      }
+    }
+  }
+
+  %banner_detail_mobile {
+    width: 245px;
+    padding: 2rem 2rem 4rem;
+    bottom: 20%;
+    border-radius: 0px 20px 20px 0px;
+  }
+  // home banner css
+  #homeBanner {
+    .banner_div {
+      .bannerContent {
+        @extend %banner_detail_mobile;
+        h5 {
+          font-size: $font-26;
+        }
+      }
+    }
+    .slick-prev {
+      left: 25px;
+    }
+    .slick-next {
+      left: 60px;
+    }
+    .slick-prev,
+    .slick-next {
+      bottom: 23%;
+    }
+  }
+
+  // common form css
+  .form_container {
+    width: 90%;
+    position: relative;
+    right: inherit;
+    padding: 1.5rem 1.5rem 0.5rem;
+    left: inherit;
+    transform: inherit;
+    top: -80px;
+    border-radius: 10px;
+    h3 {
+      @include inputSelect(14px);
+    }
+    .inputBox {
+      input {
+        @include inputSelect($font-12);
+        &::placeholder {
+          @include inputSelect($font-12);
+        }
+      }
+    }
+    .selectBox {
+      select {
+        @include inputSelect($font-12);
+      }
+    }
+    .buttonBox {
+      button {
+        font-size: $font-10;
+      }
+    }
+  }
+
+  // get in touch css
+  .get_in_touch {
+    h1 {
+      font: $font-30 $font-bold;
+    }
+    .form_container {
+      position: inherit;
+      transform: translate(0px, 0px);
+      top: inherit;
+    }
+  }
+
+  // footer css
+  footer {
+    text-align: center;
+    .address_box,
+    .quick_link_box {
+      h4 {
+        @include roboto($font-17);
+      }
+      p {
+        @include roboto($font-14);
+      }
+    }
+    .address_box,
+    .quick_link_box,
+    .logo_box {
+      margin-bottom: 1rem;
+    }
+    .quick_link_box {
+      ul {
+        li {
+          @include roboto($font-14);
+          flex: 0 0 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // how it works css
+  .how_it_works {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    h1 {
+      font: $font-30 $font-bold;
+      margin: 1.5rem 0;
+    }
+    .how_it_works_content {
+      margin-bottom: 2rem;
+      h3 {
+        font: $font-20 $font-bold;
+      }
+      p {
+        font: $font-14 $font-regular;
+      }
+    }
+  }
+
+  // our project css
+
+  .our_projects {
+    margin-top: -4rem;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    h1 {
+      font: $font-30 $font-bold;
+      margin: 1.5rem 0 3rem;
+      text-align: left !important;
+    }
+
+    .our_project_content {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      h3 {
+        font: $font-75 $font-bold;
+        position: absolute;
+        top: -60px;
+        z-index: -1;
+      }
+      h2 {
+        font: $font-25 $font-bold;
+        margin-top: 1rem;
+      }
+      p {
+        font-size: $font-12;
+      }
+      .project_config {
+        div {
+          h4 {
+            font: $font-16 $font-bold;
+          }
+          p {
+            font: $font-14 $font-regular;
+          }
+        }
+      }
+    }
+  }
+
+  // project page css
+  #project_banner {
+    justify-content: center;
+    .project_banner_div {
+      .project_banner_content {
+        @extend %banner_detail_mobile;
+        width: 300px;
+        padding: 1rem;
+        border-radius: 10px 0px 0px 10px;
+        bottom: inherit;
+        top: 5%;
+        left: inherit;
+        right: 0;
+        img {
+          max-width: 100px;
+        }
+        h5 {
+          font-size: $font-10;
+        }
+      }
+    }
+  }
+  // amennities
+  .amenities {
+    h2 {
+      font: $font-30 $font-bold;
+    }
+    h4 {
+      font: $font-20 $font-bold;
+    }
+    .amenities_content_box {
+      .amenities_content {
+        width: 50%;
+        flex: 0 0 50%;
+      }
+    }
+  }
+
+  //gallery css
+  .gallery_carousel {
+    padding: 0;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    h3 {
+      font: $font-30 $font-bold;
+    }
+    #gallery_content_div {
+      flex-wrap: nowrap;
+      overflow: scroll;
+      .gallery_content {
+        padding-right: 4rem;
+        padding-left: 0.5rem;
+        margin-right: -3rem;
+      }
+    }
+  }
+  // end of the
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  #homeBanner {
+    .banner_div {
+      .bannerContent {
+        width: 360px;
+        padding: 2rem 3rem 3rem;
+        h5 {
+          font-size: $font-25;
+        }
+      }
+    }
+  }
+  .form_container {
+    width: 45%;
+    right: 3%;
+  }
+  #project_banner {
+    .project_banner_div {
+      .project_banner_content {
+        width: 360px;
+        padding: 2rem 3rem 3rem;
+        h5 {
+          font-size: $font-25;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .our_projects {
+    padding: 0 7rem;
+  }
+  .form_container {
+    width: 22%;
+  }
+}

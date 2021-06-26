@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "uni_neuebold";
+    src: url("../fonts/fontfabric_-_unineuebold-webfont.woff2") format("woff2"),
+      url("../fonts/fontfabric_-_unineuebold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "uni_neueregular";
+    src: url("../fonts/fontfabric_-_unineueregular-webfont.woff2") format("woff2"),
+      url("../fonts/fontfabric_-_unineueregular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  $font-regular: uni_neueregular;
+  $font-bold: uni_neuebold;
+  $font-15: 15px;
+  $font-17: 17px;
+  $font-60: 60px;
+  $font-20: 20px;
+  $font-14: 14px;
+  $font-50: 50px;
+  $font-25: 25px;
+  $font-30: 30px;
+  $font-18: 18px;
+  $font-26: 26px;
+  $font-12: 12px;
+  $font-10: 10px;
+  $font-35: 35px;
+  $font-40: 40px;
+  $font-16: 16px;
+  $font-140: 140px;
+  $font-45: 45px;
+  $font-130: 130px;
+  $font-75: 75px;
+
+  $logo_color: #dbae5f;
+  $font_color: #272727;
+  $footer_background: #737373;
+  $how_it_p: #535353;
+  $tag_color: rgba(219, 174, 95, 0.35%);
+
+  %header{
+    font: $font-60 $font-bold;
+    text-transform: uppercase;
+  }

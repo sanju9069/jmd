@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "uni_neuebold";
+  src: url("../fonts/fontfabric_-_unineuebold-webfont.woff2") format("woff2"), url("../fonts/fontfabric_-_unineuebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni_neueregular";
+  src: url("../fonts/fontfabric_-_unineueregular-webfont.woff2") format("woff2"), url("../fonts/fontfabric_-_unineueregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=variable.css.map */
