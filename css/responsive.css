@@ -482,7 +482,7 @@ footer .social_box ul li {
   #homeBanner .banner_div .bannerContent, #project_banner .project_banner_div .project_banner_content {
     width: 245px;
     padding: 2rem 2rem 4rem;
-    bottom: 20%;
+    bottom: 25%;
     border-radius: 0px 20px 20px 0px;
   }
   #homeBanner .banner_div .bannerContent h5 {
@@ -496,7 +496,7 @@ footer .social_box ul li {
   }
   #homeBanner .slick-prev,
   #homeBanner .slick-next {
-    bottom: 23%;
+    bottom: 30%;
   }
   .form_container {
     width: 90%;
